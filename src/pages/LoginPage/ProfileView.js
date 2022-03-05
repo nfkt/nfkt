@@ -66,13 +66,14 @@ const LoginView = ({ pages, title }) => {
                   alt="Nihal Farhan"
                   src={require("assets/images/nfkt.jpg")}
                   sx={{ width: 200, height: 200 }}
+                  onClick={()=>setOpen(true)}
                 />
               </Box>
               <MuiModal isOpen={open} isClose={handleClose}>
                 <Container>
                   <Box
                     border={1}
-                    borderColor="turquoise"
+                    borderColor="primary.main"
                     borderRadius={2}
                     sx={{ p: 2, m: 2 }}
                   >
