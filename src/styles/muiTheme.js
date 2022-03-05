@@ -1,16 +1,12 @@
-export default {
-    palette: {
-      type: 'light',
-      primary: {
-        main: "#040f3d",
-      },
-      secondary: {
-        main: "#757575",
-      },
+import { createTheme } from "@mui/material";
+
+export const muiTheme = createTheme({
+  palette: {
+    primary: {
+      main: "#5CDB95",
     },
-    typography: {
-      button: {
-        // textTransform: "none",   //Using this will stop tranforming all button texts to UPPERCASE
-      },
-    }
-  }
+    secondary: {
+      main: "#05386B",
+    },
+  },
+});

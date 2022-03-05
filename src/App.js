@@ -1,18 +1,24 @@
-import './App.css';
-import 'navigation/RouterConfig';
-import 'react-router-dom';
+import "./App.css";
+import "navigation/RouterConfig";
+import "react-router-dom";
 import "fontsource-roboto";
-import HomeContainer  from 'pages/Home';
-import LoginContainer from 'pages/LoginPage';
-
+import HomeContainer from "pages/Home";
+import LoginContainer from "pages/LoginPage";
+import { muiTheme } from "styles/muiTheme";
+import { Container } from "@mui/material";
+import { ThemeProvider } from "@emotion/react";
 
 function App() {
   return (
     <div className="App">
-      <div className="mainContainer">
-        {/* <HomeContainer /> */}
-        <LoginContainer />
-      </div>
+      <ThemeProvider theme={muiTheme}>
+        <div className="mainContainer">
+          {/* <HomeContainer /> */}
+          <Container sx={{backgroundColor:"secondary.main"}}>
+            <LoginContainer />
+          </Container>
+        </div>
+      </ThemeProvider>
     </div>
   );
 }

@@ -25,14 +25,14 @@ const NavBar = ({ title, pages, pageName, itemComponent: ItemComponent }) => {
     };
 
     return (
-        <AppBar position="static" sx={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px', bgcolor: 'turquoise' }}>
+        <AppBar position="static" sx={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px', bgcolor: 'primary.main' }}>
             <Container maxWidth="xxl">
                 <Toolbar disableGutters>
                     <Typography
                         variant="h6"
                         noWrap
                         component="div"
-                        sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, color: '#708090' }}
+                        sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, color: 'secondary.main' }}
                     >
                         {/* {title} */}
                         <Avatar

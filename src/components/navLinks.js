@@ -5,7 +5,7 @@ export const PageListItems = ({  page }) => {
     return (
         <>
             <MenuItem>
-                <Typography textAlign="center" sx={{ color: '#708090' }}>{page}</Typography>
+                <Typography textAlign="center" sx={{ color: 'secondary.main' }}>{page}</Typography>
             </MenuItem>
         </>
     );
