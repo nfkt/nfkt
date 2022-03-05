@@ -36,19 +36,6 @@ const LoginView = ({ pages, title }) => {
             display: "flex",
           }}
         >
-          {/* <Box
-                        sx={{
-                            width: 500,
-                            height: 500,
-                            backgroundColor: '#87CEFA',
-                            opacity: [0.9, 0.8, 0.7],
-                            '&:hover': {
-                                backgroundColor: '#87CEFA',
-                                opacity: [1, 2, 1]
-                            },
-                            borderRadius: '12px'
-                        }}
-                    /> */}
           <Container
             maxWidth="xxl"
             sx={{
@@ -62,13 +49,6 @@ const LoginView = ({ pages, title }) => {
               sx={{
                 flexGrow: 1,
                 flexBasis: 0,
-                // height: '80vh',
-                // backgroundColor: '#87CEFA',
-                // opacity: [0.9, 0.8, 0.7],
-                // '&:hover': {
-                //     backgroundColor: '#87CEFA',
-                //     opacity: [1, 2, 1]
-                // },
                 borderRadius: "12px",
                 display: "flex",
                 justifyContent: "center",
@@ -110,7 +90,7 @@ const LoginView = ({ pages, title }) => {
                 elevation={3}
                 sx={{
                   flexGrow: 1,
-                  backgroundColor: "lightslategrey",
+                  backgroundColor: "secondary.main",
                   color: "turquoise",
                   display: { xs: "none", md: "inline" },
                 }}
@@ -118,17 +98,17 @@ const LoginView = ({ pages, title }) => {
                 <Container>
                   <Box
                     border={1}
-                    borderColor="turquoise"
+                    borderColor="#5CDB95"
                     borderRadius={2}
                     sx={{ p: 2, m: 2 }}
                   >
-                    <Typography variant="h4" component="h2">
+                    <Typography variant="h4" component="h2" sx={{color:'mainText.main'}}>
                       Profile
                     </Typography>
-                    <Typography variant="h6" component="div">
+                    <Typography variant="h6" component="div" sx={{color:'mainText.main'}}>
                       Nihal Farhan
                     </Typography>
-                    <Typography variant="h6" component="div">
+                    <Typography variant="h6" component="div" sx={{color:'mainText.main'}}>
                       Fullstack web developer
                     </Typography>
                   </Box>
@@ -136,12 +116,12 @@ const LoginView = ({ pages, title }) => {
                 <Container>
                   <Box
                     border={1}
-                    borderColor="white"
+                    borderColor="#5CDB95"
                     borderRadius={2}
                     sx={{ p: 2, m: 2 }}
                   >
-                    <Typography variant="h4" component="h2">
-                      Technologies are awesome
+                    <Typography variant="h4" component="h2" sx={{color:'mainText.main'}}>
+                      Technologies
                     </Typography>
 
                     <Chips chips={["React", "Redux"]} />

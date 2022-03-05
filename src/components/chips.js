@@ -12,10 +12,11 @@ export const Chips = ({chips})=>{
                 <Chip
                 label={chip}
                 sx={{
-                  backgroundColor: "turquoise",
+                  backgroundColor: "primary.main",
                   fontSize: "larger",
-                  color: "lightslategray",
+                  color: "secondary.main",
                   fontWeight: "bold",
+                  mr:1
                 }}
               />
             )
