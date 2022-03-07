@@ -9,6 +9,9 @@ body{
   background-color: #5CDB95;
   background-repeat: no-repeat;
   background-position: right;
+  height: 95vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .mainContainer{
@@ -16,4 +19,10 @@ body{
   margin:2% !important;
   /* height: 98vh;
   background-color:aliceblue; */
+}
+
+@media only screen and (max-width: 600px)  {
+  body{
+    height: 98vh;
+  }
 }
