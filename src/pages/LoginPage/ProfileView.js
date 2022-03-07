@@ -12,25 +12,64 @@ import { MuiModal } from "components/muiModal";
 import { Chips } from "components/chips";
 import { muiTheme } from "styles/muiTheme";
 import { ThemeProvider } from "@emotion/react";
+import { GlitchName } from "components/glitchName";
 
 const LoginView = ({ pages, title }) => {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
   return (
     <>
-      <Container maxWidth="xxl">
+      <Container sx={{width:'100%', pl: 0, pr: 0}}>
         <NavBar
           title={title}
           pages={pages}
           pageName="page"
           itemComponent={PageListItems}
         />
-        <Container sx={{bgcolor:'primary.main'}}>
-        <Box
+        <Container sx={{bgcolor:'primary.main', height:'100vh', overflow:'hidden'}}>
+          <Box sx={{bgcolor:'inherit', height:'inherit'}}>
+            <GlitchName />
+            </Box>
+        
+        </Container>
+      </Container>
+    </>
+  );
+};
+
+export default LoginView;
+
+{
+  /* 
+              <Container sx={{ ml: '1rem' }}>
+                                        <Chip label="React" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
+                                        &nbsp;&nbsp;
+                                        <Chip label="Redux" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
+                                        &nbsp;&nbsp;
+                                        <Chip label="MUI" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
+                                        &nbsp;&nbsp;
+                                        <Chip label="Axios" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
+                                        &nbsp;&nbsp;
+                                        <Chip label="Sequelize" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
+                                        &nbsp;&nbsp;
+                                        <Chip label="Express" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
+                                        &nbsp;&nbsp;
+                                        <Chip label="Flutter" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
+                                        &nbsp;&nbsp;
+                                        <Chip label="Scrapy" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
+                                    </Container> 
+                  </Box>
+*/
+}
+
+
+
+
+{/* <Box
           sx={{
             // bgcolor: 'primary.main',
             // bgcolor: "#5CDB95",
-            height: "80vh",
+            height: "inherit",
             borderBottomRightRadius: "10px",
             borderBottomLeftRadius: "10px",
             display: "flex",
@@ -131,34 +170,4 @@ const LoginView = ({ pages, title }) => {
               </Paper>
             </Box>
           </Container>
-        </Box>
-        </Container>
-      </Container>
-    </>
-  );
-};
-
-export default LoginView;
-
-{
-  /* 
-              <Container sx={{ ml: '1rem' }}>
-                                        <Chip label="React" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
-                                        &nbsp;&nbsp;
-                                        <Chip label="Redux" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
-                                        &nbsp;&nbsp;
-                                        <Chip label="MUI" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
-                                        &nbsp;&nbsp;
-                                        <Chip label="Axios" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
-                                        &nbsp;&nbsp;
-                                        <Chip label="Sequelize" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
-                                        &nbsp;&nbsp;
-                                        <Chip label="Express" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
-                                        &nbsp;&nbsp;
-                                        <Chip label="Flutter" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
-                                        &nbsp;&nbsp;
-                                        <Chip label="Scrapy" sx={{ backgroundColor: 'turquoise', fontSize: 'larger', color: 'lightslategray', fontWeight: 'bold', m: 1 }} />
-                                    </Container> 
-                  </Box>
-*/
-}
+        </Box> */}

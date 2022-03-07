@@ -14,9 +14,9 @@ function App() {
       <ThemeProvider theme={muiTheme}>
         <div className="mainContainer">
           {/* <HomeContainer /> */}
-          <Container sx={{backgroundColor:"secondary.main"}}>
+      
             <LoginContainer />
-          </Container>
+       
         </div>
       </ThemeProvider>
     </div>
